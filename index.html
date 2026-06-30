@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.A.B Rent-A-Car | Premium Car Rentals</title>
+    <meta name="description" content="N.A.B Rent-A-Car provides premium and reliable vehicle rental services.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="plane-container">
+                <!-- Place your real airplane image here and name it plane.png -->
+                <img src="video/image/air.png" alt="Landing Plane" class="landing-plane">
+            </div>
+            <h2 class="model-text"><span class="text-red">NAB</span> <span class="text-black">TRAVELS</span></h2>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="video/image/nab logo.png" alt="NAB Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-icon" aria-label="Search">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <a href="#explore" class="btn btn-pill-white">EXPLORE MORE ↗</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Background Video -->
+        <video class="hero-bg" autoplay muted loop playsinline>
+            <source src="video/nbn.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content text-center">
+            <h3 class="hero-subtitle">Explore the world as much possible</h3>
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title">EXPLORE</h1>
+                <div class="hero-title-box">
+                    <h2>THE WORLD</h2>
+                </div>
+            </div>
+            <a href="#destinations" class="btn btn-pill-red mt-4">See All Destination ↗</a>
+        </div>
+    </section>
+
+    <!-- Tour Search Section -->
+    <div class="search-bar-wrapper container">
+        <form class="search-form">
+            <div class="search-field">
+                <div class="field-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--color-primary)" stroke-width="2"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0z"></path>
+                        <path d="M12 2a10 10 0 0 0-7.07 17.07l1.42-1.42A8 8 0 1 1 12 4v-2z"></path>
+                        <polyline points="12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <div class="field-info">
+                    <span class="field-label">All Tour</span>
+                    <select class="field-select">
+                        <option value="">Select Tour</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-divider"></div>
+
+            <div class="search-field">
+                <div class="field-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--color-primary)" stroke-width="2"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <div class="field-info">
+                    <span class="field-label">Departure Date</span>
+                    <input type="date" class="field-input">
+                </div>
+            </div>
+
+            <div class="search-divider"></div>
+
+            <div class="search-field">
+                <div class="field-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--color-primary)" stroke-width="2"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="field-info">
+                    <span class="field-label">Guest</span>
+                    <select class="field-select">
+                        <option value="">Your Guest</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-btn-container">
+                <button type="submit" class="btn btn-pill-dark">Search Here <svg viewBox="0 0 24 24" width="16"
+                        height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" style="margin-left: 5px;">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <!-- Left side: Images -->
+            <div class="about-images">
+                <div class="main-image-circle">
+                    <!-- Put your main circle image here -->
+                </div>
+                <div class="sub-image-circle">
+                    <!-- Put your sub circle image here -->
+                </div>
+            </div>
+
+            <!-- Right side: Content -->
+            <div class="about-content">
+                <h2 class="about-title">
+                    We specialize in providing innovative <span class="highlight-brush">tourist</span> solutions
+                    tailored to meet the unique needs of our clients.
+                </h2>
+
+                <div class="about-details">
+                    <div class="about-subtitle-wrapper">
+                        <h3 class="about-subtitle">About Us</h3>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            tourist hires great people from a Real Transport Inc was founded of backgrounds, which
+                            simply makes tourist hires great people from a Real Transport stronger and we couldn't be
+                            prouder elevating your optimizing Busines and incorporated in 1997 in Milwaukee Wisconsin
+                            experienced team provides unparalleled service,
+                        </p>
+                        <div class="about-action" style="margin-top: 2rem;">
+                            <a href="#explore" class="btn btn-pill-red">EXPLORE MORE ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="popular-destinations section-padding" id="destinations">
+        <div class="destinations-grid-container">
+            <div class="destinations-header">
+                <div class="destinations-title-area">
+                    <h3 class="destinations-subtitle">Oman Tourism</h3>
+                    <h2 class="destinations-title">Discover Oman</h2>
+                    <p class="destinations-text">
+                        Experience the rich heritage, stunning landscapes, and warm hospitality of Oman. From majestic
+                        mountains to pristine beaches, your Arabian adventure awaits.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="destinations-grid-container">
+            <div class="destinations-grid">
+                <!-- Card 1 -->
+                <div class="destination-card">
+                    <div class="card-image-wrapper">
+                        <img src="video/image/Oman Muscat seaside morning 🌊.jpg" alt="Muscat">
+                        <div class="card-overlay-content">
+                            <h4 class="card-title">Muscat</h4>
+                            <p class="card-desc">Explore the stunning Grand Mosque, vibrant souqs, and coastal beauty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-info-box">
+                        <div class="price-info">
+                            <span class="label">From</span>
+                            <span class="value">INR 35000</span>
+                        </div>
+                        <div class="duration-info">
+                            <span class="label">4 days</span>
+                            <span class="value">& 3 nights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="destination-card">
+                    <div class="card-image-wrapper">
+                        <img src="video/image/In Salalah.jpg" alt="Salalah">
+                        <div class="card-overlay-content">
+                            <h4 class="card-title">Salalah</h4>
+                            <p class="card-desc">Discover lush green mountains, beautiful waterfalls, and white sand
+                                beaches.</p>
+                        </div>
+                    </div>
+                    <div class="card-info-box">
+                        <div class="price-info">
+                            <span class="label">From</span>
+                            <span class="value">INR 42000</span>
+                        </div>
+                        <div class="duration-info">
+                            <span class="label">4 days</span>
+                            <span class="value">& 3 nights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="destination-card">
+                    <div class="card-image-wrapper">
+                        <img src="video/image/download (14).jpg" alt="Wahiba Sands">
+                        <div class="card-overlay-content">
+                            <h4 class="card-title">Wahiba Sands</h4>
+                            <p class="card-desc">Experience thrilling dune bashing and magical nights under the stars.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-info-box">
+                        <div class="price-info">
+                            <span class="label">From</span>
+                            <span class="value">INR 28000</span>
+                        </div>
+                        <div class="duration-info">
+                            <span class="label">3 days</span>
+                            <span class="value">& 2 nights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="destination-card">
+                    <div class="card-image-wrapper">
+                        <img src="video/image/Nizwa.jpg" alt="Nizwa">
+                        <div class="card-overlay-content">
+                            <h4 class="card-title">Nizwa</h4>
+                            <p class="card-desc">Step back in time in the ancient capital and explore historic forts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-info-box">
+                        <div class="price-info">
+                            <span class="label">From</span>
+                            <span class="value">INR 32000</span>
+                        </div>
+                        <div class="duration-info">
+                            <span class="label">4 days</span>
+                            <span class="value">& 3 nights</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="destinations-action" style="text-align: center; margin-top: 50px;">
+                <a href="#all-destinations" class="btn btn-pill-red">EXPLORE MORE ↗</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Advance Tour Plan Section -->
+    <section class="advance-tour-plan section-padding" id="advance-tour">
+
+        <!-- Flight Animation Divider -->
+        <div class="flight-divider-container">
+            <svg class="flight-path-svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+                <path id="flight-curve" d="M 0,60 C 300,10 900,110 1200,60" fill="none" stroke="#dcdcdc"
+                    stroke-width="2" stroke-dasharray="6,6" />
+                <text font-size="28" fill="#cc1a1f" text-anchor="middle" dominant-baseline="central">
+                    ✈
+                    <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1">
+                        <mpath href="#flight-curve" />
+                    </animateMotion>
+                </text>
+            </svg>
+        </div>
+
+        <div class="container" style="text-align: center;">
+            <div class="advance-header">
+                <h3 class="advance-subtitle">advance tour plan</h3>
+                <h2 class="advance-title">Shelter of Love, Compassion,<br>and New Beginnings</h2>
+                <p class="advance-text">
+                    communication and utilizes cutting edge logistic planning to get your shipment completed<br>
+                    on time. itself founded of backgrounds, which simply.
+                </p>
+            </div>
+        </div>
+
+        <div class="advance-grid-wrapper">
+            <div class="advance-dotted-line"></div>
+            <div class="swiper advance-swiper">
+                <div class="swiper-wrapper advance-grid">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/muscutro.jpg" alt="Royal Muscat Tour">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Muscat, Oman
+                            </div>
+                            <h4 class="advance-card-title">Royal Muscat Tour</h4>
+                            <p class="advance-card-desc">Explore the grand palaces, bustling muttrah souq, and the
+                                vibrant culture of Oman's capital.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">6 Nights - 7 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$650.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/tropical.jpg" alt="Tropical Salalah Escape">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Salalah, Oman
+                            </div>
+                            <h4 class="advance-card-title">Tropical Salalah Escape</h4>
+                            <p class="advance-card-desc">Discover lush green mountains, beautiful wadis, and pristine
+                                white sand beaches.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">7 Nights - 8 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$889.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/magical.jpg" alt="Magical Desert Safari">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Wahiba Sands, Oman
+                            </div>
+                            <h4 class="advance-card-title">Magical Desert Safari</h4>
+                            <p class="advance-card-desc">Experience thrilling dune bashing, camel rides, and magical
+                                nights under the starry desert sky.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">8 Nights - 9 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$149.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/mountain.jpg" alt="Mountain Grand Canyon">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Jebel Shams, Oman
+                            </div>
+                            <h4 class="advance-card-title">Mountain Grand Canyon</h4>
+                            <p class="advance-card-desc">Hike the breathtaking trails of Oman's highest mountain and
+                                witness spectacular canyon views.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">10 Nights - 11 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$950.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Duplicated Cards for Sliding Animation -->
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/muscutro.jpg" alt="Royal Muscat Tour">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Muscat, Oman
+                            </div>
+                            <h4 class="advance-card-title">Royal Muscat Tour</h4>
+                            <p class="advance-card-desc">Explore the grand palaces, bustling muttrah souq, and the
+                                vibrant culture of Oman's capital.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">6 Nights - 7 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$650.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/tropical.jpg" alt="Tropical Salalah Escape">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Salalah, Oman
+                            </div>
+                            <h4 class="advance-card-title">Tropical Salalah Escape</h4>
+                            <p class="advance-card-desc">Discover lush green mountains, beautiful wadis, and pristine
+                                white sand beaches.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">7 Nights - 8 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$889.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/magical.jpg" alt="Magical Desert Safari">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Wahiba Sands, Oman
+                            </div>
+                            <h4 class="advance-card-title">Magical Desert Safari</h4>
+                            <p class="advance-card-desc">Experience thrilling dune bashing, camel rides, and magical
+                                nights under the starry desert sky.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">8 Nights - 9 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$149.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide advance-card">
+                        <img src="video/image/mountain.jpg" alt="Mountain Grand Canyon">
+                        <div class="advance-card-body">
+                            <div class="advance-location">
+                                <svg width="12" height="14" viewBox="0 0 384 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                                </svg>
+                                Jebel Shams, Oman
+                            </div>
+                            <h4 class="advance-card-title">Mountain Grand Canyon</h4>
+                            <p class="advance-card-desc">Hike the breathtaking trails of Oman's highest mountain and
+                                witness spectacular canyon views.</p>
+
+                            <div class="advance-info-box">
+                                <div class="advance-meta">
+                                    <span class="rating">
+                                        <span style="color: #ff6b6b;">★</span> 5.00 (334)
+                                    </span>
+                                    <span class="duration">10 Nights - 11 Days</span>
+                                </div>
+
+                                <div class="advance-footer">
+                                    <div class="advance-price">
+                                        <strong>$950.00</strong>
+                                        <span>/ Per Person</span>
+                                    </div>
+                                    <a href="#" class="advance-explore">EXPLORE MORE ↗</a>
+                                </div>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- Scroll wrapper gives scroll "room" for the sticky animation -->
+    <div class="cat-scroll-wrapper" id="catScrollWrapper">
+        <section class="tour-categories-section" id="catSection">
+
+            <!-- Top Right Decorative Background -->
+            <div class="cat-bg-decorative">
+                <img src="video/image/mus.jpg" alt="Decorative background">
+            </div>
+
+            <div class="container" style="text-align: center; position: relative; z-index: 2;">
+                <div class="cat-header">
+                    <h3 class="cat-subtitle">Tour categories</h3>
+                    <h2 class="cat-title">Explore Our Tour Categories</h2>
+                    <p class="cat-text">
+                        Find your perfect getaway with our carefully curated travel experiences.
+                    </p>
+                </div>
+
+                <!-- Single set of cards that morph from fan → grid via scroll -->
+                <div class="cat-morph-stage" id="catMorphStage">
+                    <div class="cat-morph-card" id="mCard1" data-label="Honeymoon">
+                        <div class="cat-morph-img"><img src="video/image/In Salalah.jpg" alt="Honeymoon"></div>
+                        <div class="cat-morph-label">
+                            <h4>Honeymoon</h4>
+                            <a href="#" class="cat-icon-link"><span>✈</span></a>
+                        </div>
+                    </div>
+                    <div class="cat-morph-card" id="mCard2" data-label="Nature & Wildlife">
+                        <div class="cat-morph-img"><img src="video/image/tropical.jpg" alt="Nature & Wildlife"></div>
+                        <div class="cat-morph-label">
+                            <h4>Nature & Wildlife</h4>
+                            <a href="#" class="cat-icon-link"><span>✈</span></a>
+                        </div>
+                    </div>
+                    <div class="cat-morph-card" id="mCard3" data-label="Adventure">
+                        <div class="cat-morph-img"><img src="video/image/mountain.jpg" alt="Adventure"></div>
+                        <div class="cat-morph-label">
+                            <h4>Adventure</h4>
+                            <a href="#" class="cat-icon-link"><span>✈</span></a>
+                        </div>
+                    </div>
+                    <div class="cat-morph-card" id="mCard4" data-label="Hiking">
+                        <div class="cat-morph-img"><img src="video/image/Best Photo Spots In Oman Wadi Shab.jpg"
+                                alt="Hiking"></div>
+                        <div class="cat-morph-label">
+                            <h4>Hiking</h4>
+                            <a href="#" class="cat-icon-link"><span>✈</span></a>
+                        </div>
+                    </div>
+                    <div class="cat-morph-card" id="mCard5" data-label="Luxury">
+                        <div class="cat-morph-img"><img src="video/image/abou5.jpg" alt="Luxury"></div>
+                        <div class="cat-morph-label">
+                            <h4>Luxury</h4>
+                            <a href="#" class="cat-icon-link"><span>✈</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stats-item">
+                <span class="stats-bg-num" data-target="145">0</span>
+                <span class="stats-label">Travel Tales</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-bg-num" data-target="74">0</span>
+                <span class="stats-label">Journey Bound</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-bg-num" data-target="134">0</span>
+                <span class="stats-label">Miles Away</span>
+            </div>
+            <div class="stats-item">
+                <span class="stats-bg-num" data-target="85">0</span>
+                <span class="stats-label">Escape Route</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="reviews-section">
+        <div class="reviews-header text-center">
+            <h3 class="reviews-cursive-heading">client reviews</h3>
+            <h2 class="reviews-title">What Our <span class="highlight">Clients</span> Say</h2>
+            <p class="reviews-subtitle">Discover why travelers and businesses trust N.A.B Travels.</p>
+        </div>
+
+        <div class="reviews-scatter-container">
+            <!-- Card 1 -->
+            <div class="review-card card-dark card-pos-1">
+                <div class="r-stars-card">★★★★★</div>
+                <p class="review-text">N.A.B Travels provided an exceptional tour experience. The itinerary was
+                    perfectly planned, and the booking process was seamless. Highly recommended for any trip!</p>
+                <div class="client-info">
+                    <div class="client-avatar avatar-dark">M</div>
+                    <div class="client-details">
+                        <h4>Muhammed Nabeel</h4>
+                        <span>TOURIST</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="review-card card-primary card-pos-2">
+                <div class="r-stars-card">★★★★★</div>
+                <p class="review-text">Excellent value and amazing curated tours. We booked a complete package for our
+                    family vacation and the experience was perfect from start to finish.</p>
+                <div class="client-info">
+                    <div class="client-avatar avatar-primary">F</div>
+                    <div class="client-details">
+                        <h4>Fathima Nidha</h4>
+                        <span>FAMILY TRIP</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="review-card card-accent card-pos-3">
+                <div class="r-stars-card">★★★★★</div>
+                <p class="review-text">Customer support replied very quickly. Their expert local guides and flexible
+                    itineraries helped us enjoy our trip without any hassle.</p>
+                <div class="client-info">
+                    <div class="client-avatar avatar-accent">R</div>
+                    <div class="client-details">
+                        <h4>Muhammed Rishan</h4>
+                        <span>BUSINESS TRAVELER</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="review-card card-light card-pos-4">
+                <div class="r-stars-card">★★★★★</div>
+                <p class="review-text">The tour service was efficient and professional. In just a few minutes we had our
+                    entire itinerary ready. Will definitely book again next time.</p>
+                <div class="client-info">
+                    <div class="client-avatar avatar-light">J</div>
+                    <div class="client-details">
+                        <h4>James</h4>
+                        <span>WEEKEND GETAWAY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section">
+        <div class="container why-choose-grid">
+            <!-- Left Side: Image with Floating Badges -->
+            <div class="wc-image-column">
+                <div class="wc-image-wrapper">
+                    <img src="video/image/mus.jpg" alt="Why Choose Us" class="wc-main-img">
+                    <div class="wc-overlay-text">N.A.B Travels</div>
+
+                    <div class="wc-float-badge badge-top-right">
+                        <h4>Unforgettable × Seamless</h4>
+                        <p>Curated tours with premium experiences</p>
+                    </div>
+
+                    <div class="wc-float-badge badge-bottom-left">
+                        <h4>Trusted by Travelers</h4>
+                        <p>Loved by tourists, professionals, and families</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Features List -->
+            <div class="wc-content-column">
+                <h2 class="wc-title">Why Choose N.A.B Travels</h2>
+
+                <div class="wc-features">
+                    <div class="wc-feature-card">
+                        <div class="wc-icon">✓</div>
+                        <p>Customized tour packages tailored to your unique travel style</p>
+                    </div>
+                    <div class="wc-feature-card">
+                        <div class="wc-icon">✓</div>
+                        <p>24/7 dedicated support to ensure a seamless travel experience</p>
+                    </div>
+                    <div class="wc-feature-card">
+                        <div class="wc-icon">✓</div>
+                        <p>Transparent pricing with zero hidden fees on all tour bookings</p>
+                    </div>
+                    <div class="wc-feature-card">
+                        <div class="wc-icon">✓</div>
+                        <p>Expert local guides offering deep cultural insights and safe travel</p>
+                    </div>
+                    <div class="wc-feature-card">
+                        <div class="wc-icon">✓</div>
+                        <p>Flexible itineraries and easy booking process for stress-free trips</p>
+                    </div>
+                </div>
+
+                <div class="wc-quote-box">
+                    We don't just take you to new places, we curate unforgettable journeys that leave you with lifelong
+                    memories.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Enquiry Section -->
+    <section class="enquiry-section">
+        <div class="container">
+            <h2 style="font-family: 'Playfair Display', serif; font-weight: 900; color: #111111; font-size: 3.2rem; text-align: center; margin-bottom: 40px; text-transform: capitalize;">Contact Now</h2>
+            <div class="enquiry-outer-box">
+                <div class="enquiry-grid">
+                    <!-- Left Side: Map -->
+                    <div class="enquiry-map-wrapper">
+                        <iframe src="https://maps.google.com/maps?q=Oman&t=&z=6&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- Right Side: Form -->
+                    <div class="enquiry-form-wrapper">
+                        <p class="enquiry-subtitle">quick enquiry</p>
+                        <h2 class="enquiry-title">Let's plan your next experience</h2>
+
+                        <form class="enquiry-form">
+                            <div class="form-group">
+                                <label for="eq_name">Your name</label>
+                                <input type="text" id="eq_name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="eq_email">Email address</label>
+                                <input type="email" id="eq_email" placeholder="Email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="eq_destination">Dream destination</label>
+                                <input type="text" id="eq_destination" placeholder="Dream destination" required>
+                            </div>
+
+                            <button type="submit" class="btn-enquiry">Request A Callback</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-card">
+                <!-- Top Section -->
+                <div class="footer-top">
+                    <div class="footer-slogan">
+                        <h2>Travel Your Way To Unforgettable Memories &ndash;<br>One Trip At A Time.</h2>
+                    </div>
+                    <div class="footer-subscribe">
+                        <p>Get In Touch!</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Middle Section -->
+                <div class="footer-middle">
+                    <div class="footer-col">
+                        <h4>CONTACT INFORMATION</h4>
+                        <ul class="contact-list">
+                            <li><span class="icon">✉</span> support@nabtravels.com</li>
+                            <li><span class="icon">📞</span> +968 1234 5678</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>HELP</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>FOLLOW US</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg></a>
+                            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z" />
+                                </svg></a>
+                            <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="footer-bottom">
+                    <div class="fb-left">
+                        <p>&copy; 2026 N.A.B Travels. All Rights Reserved.</p>
+                    </div>
+                    <div class="fb-right">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms & condition</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for navbar scroll effect and mobile menu
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Preloader: Wait 3 seconds before hiding
+        setTimeout(() => {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('hide-preloader');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        }, 3000);
+
+        // ── Scroll-driven Fan → Grid Morph ───────────────────────────────
+        (function () {
+            const wrapper = document.getElementById('catScrollWrapper');
+            const stage = document.getElementById('catMorphStage');
+            if (!wrapper || !stage) return;
+
+            const cards = stage.querySelectorAll('.cat-morph-card');
+
+            // Fan state: [translateX(px), translateY(px), rotate(deg)]
+            // Cards overlap in the center and fan outward
+            const fanState = [
+                { x: -340, y: 40, r: -20 },   // card 1 — far left
+                { x: -170, y: 15, r: -10 },   // card 2
+                { x: 0, y: 0, r: 0 },   // card 3 — center
+                { x: 170, y: 15, r: 10 },   // card 4
+                { x: 340, y: 40, r: 20 },   // card 5 — far right
+            ];
+
+            // Grid state: evenly spaced row, no rotation
+            // Card width ~215px + gap ~15px = 230px apart; center card at 0
+            const gridState = [
+                { x: -460, y: 0, r: 0 },
+                { x: -230, y: 0, r: 0 },
+                { x: 0, y: 0, r: 0 },
+                { x: 230, y: 0, r: 0 },
+                { x: 460, y: 0, r: 0 },
+            ];
+
+            function lerp(a, b, t) { return a + (b - a) * t; }
+
+            function applyMorph(progress) {
+                // progress: 0 = full fan, 1 = full grid
+                cards.forEach((card, i) => {
+                    const f = fanState[i];
+                    const g = gridState[i];
+                    const x = lerp(f.x, g.x, progress);
+                    const y = lerp(f.y, g.y, progress);
+                    const r = lerp(f.r, g.r, progress);
+                    card.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${r}deg)`;
+                });
+
+                // Show labels only when grid is mostly formed (progress > 0.85)
+                if (progress > 0.85) {
+                    stage.classList.add('is-grid');
+                } else {
+                    stage.classList.remove('is-grid');
+                }
+            }
+
+            // Start at fan position
+            applyMorph(0);
+
+            window.addEventListener('scroll', function () {
+                const rect = wrapper.getBoundingClientRect();
+                const wrapperHeight = wrapper.offsetHeight;
+                const viewH = window.innerHeight;
+
+                // progress = 0 when top of wrapper hits top of viewport
+                // progress = 1 when bottom of wrapper hits bottom of viewport
+                const scrolled = -rect.top;
+                const scrollRange = wrapperHeight - viewH;
+
+                const progress = Math.min(1, Math.max(0, scrolled / scrollRange));
+                applyMorph(progress);
+            }, { passive: true });
+        })();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.advance-swiper', {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                loop: true,
+                slidesPerGroup: 1,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    992: { slidesPerView: 3 },
+                    1200: { slidesPerView: 4 }
+                }
+            });
+
+            // Pause on hover
+            const swiperContainer = document.querySelector('.advance-swiper');
+            if (swiperContainer) {
+                swiperContainer.addEventListener('mouseenter', function () {
+                    swiper.autoplay.stop();
+                });
+                swiperContainer.addEventListener('mouseleave', function () {
+                    swiper.autoplay.start();
+                });
+            }
+        });
+    </script>
+
+    <script>
+        // ── Stats Counter Increment Animation ─────────────────────────────
+        (function () {
+            const counters = document.querySelectorAll('.stats-bg-num');
+            if (!counters.length) return;
+
+            function animateCount(el, target, duration) {
+                let start = 0;
+                const step = Math.ceil(target / (duration / 16));
+                const timer = setInterval(function () {
+                    start += step;
+                    if (start >= target) {
+                        el.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        el.textContent = start;
+                    }
+                }, 16);
+            }
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        var el = entry.target;
+                        var target = parseInt(el.getAttribute('data-target'), 10);
+                        animateCount(el, target, 1800);
+                        observer.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            counters.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+</body>
+
+</html>
